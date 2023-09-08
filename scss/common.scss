@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+a{
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+}
+
+$font1 : Poppins;
+
+header{
+    width: 100vw;
+    padding-top: 50px;
+    .inner{
+        max-width: 1000px;
+        margin: 0 auto;
+
+        h1{
+            text-align: center;
+            a{
+                color: #000;
+            }
+        }
+        nav{
+            position: absolute;
+            right: 100px;
+            top: 50px;
+            ul{
+                display: flex;
+                li{          
+                    width: 75px;
+                    display: flex;
+                    justify-content: space-around;          
+                    
+                    &:nth-of-type(1){
+                        position: relative;
+                        &::after{
+                            position: absolute;
+                            top: 17px;
+                            right: 0;
+                            display: block;
+                            content: '';
+                            width: 5px;
+                            height: 5px;
+                            background-color: #ddd;
+                            border-radius: 5px;
+                        }        
+                    }
+                    a{
+                        color: #777;
+                        font: 14px/40px $font1;
+                    }
+                }
+                
+            }
+        }
+
+        .gnb{
+            margin-top: 40px;
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            
+            >li{
+                height: 40px;
+                text-align: center;
+                a{
+                    color: #000;
+                    font: bold 18px/40px $font1;
+                }
+                .sub{
+                    // display: none;                    
+                    li{
+                        a{
+                            color: #777;
+                            font: 14px/40px $font1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

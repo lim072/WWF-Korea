@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+header {
+  width: 100vw;
+  padding-top: 50px;
+}
+header .inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+header .inner h1 {
+  text-align: center;
+}
+header .inner h1 a {
+  color: #000;
+}
+header .inner nav {
+  position: absolute;
+  right: 100px;
+  top: 50px;
+}
+header .inner nav ul {
+  display: flex;
+}
+header .inner nav ul li {
+  width: 75px;
+  display: flex;
+  justify-content: space-around;
+}
+header .inner nav ul li:nth-of-type(1) {
+  position: relative;
+}
+header .inner nav ul li:nth-of-type(1)::after {
+  position: absolute;
+  top: 17px;
+  right: 0;
+  display: block;
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+header .inner nav ul li a {
+  color: #777;
+  font: 14px/40px Poppins;
+}
+header .inner .gnb {
+  margin-top: 40px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+header .inner .gnb > li {
+  height: 40px;
+  text-align: center;
+}
+header .inner .gnb > li a {
+  color: #000;
+  font: bold 18px/40px Poppins;
+}
+header .inner .gnb > li .sub li a {
+  color: #777;
+  font: 14px/40px Poppins;
+}
+
+/*# sourceMappingURL=style.css.map */
