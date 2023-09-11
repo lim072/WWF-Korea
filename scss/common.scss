@@ -19,6 +19,7 @@ header{
     .inner{
         max-width: 1000px;
         margin: 0 auto;
+        position: relative;
 
         h1{
             position: relative;
@@ -30,8 +31,8 @@ header{
         }
         nav{
             position: absolute;
-            right: 100px;
-            top: 50px;
+            right: 0px;
+            top: 0px;
             ul{
                 display: flex;
                 li{          
@@ -55,7 +56,7 @@ header{
                     }
                     a{
                         color: #777;
-                        font: 14px/40px $font1;
+                        font: 12px/40px $font1;
                     }
                 }
                 

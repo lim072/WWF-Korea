@@ -1,5 +1,41 @@
 #visual{
     width: 100vw;
     height: 500px;
-    background-color: green;
+    .frame{
+        position: relative;
+        width: 300%;
+        height: 100%;
+        overflow: hidden;
+        
+        .slide{
+            width: 100%;
+            display: flex;
+            >li{
+                width: 100%;
+                transition: 0.5s;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .slideBtn{
+            position: relative;
+            bottom: 50px;
+            left: 25%;
+            display: flex;
+            >li{
+                margin-right: 10px;
+                width: 14px;
+                height: 14px;
+                border-radius: 10px;
+                background-color: rgb(255, 255, 255);
+                transition: width 0.3s;
+                cursor: pointer;
+                &.on{
+                    background-color: rgb(255, 208, 0);
+                    width: 34px;
+                }
+            }
+        }
+    }
 }

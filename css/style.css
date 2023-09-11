@@ -21,6 +21,7 @@ header {
 header .inner {
   max-width: 1000px;
   margin: 0 auto;
+  position: relative;
 }
 header .inner h1 {
   position: relative;
@@ -32,8 +33,8 @@ header .inner h1 a {
 }
 header .inner nav {
   position: absolute;
-  right: 100px;
-  top: 50px;
+  right: 0px;
+  top: 0px;
 }
 header .inner nav ul {
   display: flex;
@@ -59,7 +60,7 @@ header .inner nav ul li:nth-of-type(1)::after {
 }
 header .inner nav ul li a {
   color: #777;
-  font: 14px/40px Poppins;
+  font: 12px/40px Poppins;
 }
 header .inner .gnb {
   position: relative;
@@ -131,7 +132,42 @@ header .subBg {
 #visual {
   width: 100vw;
   height: 500px;
-  background-color: green;
+}
+#visual .frame {
+  position: relative;
+  width: 300%;
+  height: 100%;
+  overflow: hidden;
+}
+#visual .frame .slide {
+  width: 100%;
+  display: flex;
+}
+#visual .frame .slide > li {
+  width: 100%;
+  transition: 0.5s;
+}
+#visual .frame .slide > li img {
+  width: 100%;
+}
+#visual .frame .slideBtn {
+  position: relative;
+  bottom: 50px;
+  left: 25%;
+  display: flex;
+}
+#visual .frame .slideBtn > li {
+  margin-right: 10px;
+  width: 14px;
+  height: 14px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  transition: width 0.3s;
+  cursor: pointer;
+}
+#visual .frame .slideBtn > li.on {
+  background-color: rgb(255, 208, 0);
+  width: 34px;
 }
 
 /*# sourceMappingURL=style.css.map */
