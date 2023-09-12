@@ -280,6 +280,7 @@ footer .inner .footerMenu2 ul li {
   width: 100vw;
   height: 700px;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 #content .inner {
   padding-top: 50px;
@@ -303,10 +304,10 @@ footer .inner .footerMenu2 ul li {
   overflow: hidden;
 }
 #content .inner .conBox1 .con1 .con1Img {
-  width: 290px;
+  padding: 10px;
 }
 #content .inner .conBox1 .con1 .con1Img img {
-  width: 290px;
+  width: 340px;
   opacity: 0.9;
 }
 #content .inner .conBox1 .con1 .con1Text {
@@ -315,6 +316,7 @@ footer .inner .footerMenu2 ul li {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  position: relative;
 }
 #content .inner .conBox1 .con1 .con1Text h3 {
   font: 30px/1 Poppins;
@@ -329,10 +331,21 @@ footer .inner .footerMenu2 ul li {
   border-radius: 50px;
   border: 2px solid #fff;
   transition: 0.3s;
+  position: relative;
+  z-index: 2;
 }
 #content .inner .conBox1 .con1 .con1Text a:hover {
   background-color: #fff;
   color: rgb(79, 189, 156);
+}
+#content .inner .conBox1 .con1 .con1Text img {
+  position: absolute;
+  opacity: 0.4;
+  width: 200px;
+  bottom: 0;
+  left: 0;
+  transform: rotate(150deg);
+  z-index: 1;
 }
 #content .inner .conBox1 .con2 {
   width: 300px;
@@ -343,6 +356,13 @@ footer .inner .footerMenu2 ul li {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  position: relative;
+}
+#content .inner .conBox1 .con2 img {
+  width: 150px;
+  opacity: 0.7;
+  position: absolute;
+  right: 0;
 }
 #content .inner .conBox1 .con2 h3 {
   font: 50px/1 Poppins;
@@ -375,6 +395,8 @@ footer .inner .footerMenu2 ul li {
   background-color: rgb(255, 201, 99);
   border-radius: 0 0 0 80px;
   align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 #content .inner .conBox2 .con3 h3 {
   font: bold 18px/1 Poppins;
@@ -385,6 +407,8 @@ footer .inner .footerMenu2 ul li {
   padding-bottom: 50px;
   display: flex;
   justify-content: space-around;
+  position: relative;
+  z-index: 2;
 }
 #content .inner .conBox2 .con3 ul li img {
   filter: grayscale(0.7);
@@ -393,11 +417,19 @@ footer .inner .footerMenu2 ul li {
 #content .inner .conBox2 .con3 ul li:hover img {
   filter: grayscale(0);
 }
+#content .inner .conBox2 .con3 > img {
+  position: absolute;
+  z-index: 1;
+  width: 280px;
+  opacity: 0.3;
+  left: -50px;
+  bottom: -80px;
+}
 #content .inner .conBox2 .con4 {
   width: 700px;
   height: 300px;
   overflow: hidden;
-  background-color: darkseagreen;
+  background-color: rgb(236, 213, 238);
   border-radius: 0 0 80px 0;
 }
 #content .inner .conBox2 .con4 .inner {

@@ -106,6 +106,7 @@
     width: 100vw;
     height: 700px;
     margin-top: 50px;
+    margin-bottom: 50px;
     .inner{
         padding-top: 50px;
         margin: 0 auto;
@@ -126,11 +127,12 @@
                 overflow: hidden;
                 
                 .con1Img{
-                    width: 290px;
+                    padding: 10px;
                     img{
-                        width: 290px;
+                        width: 340px;
                         opacity: 0.9;
                     }
+                
                 }
                 .con1Text{
                     width: 100%;
@@ -138,7 +140,8 @@
                     flex-direction: column;
                     justify-content: space-around;
                     align-items: center;
-                    
+                    position: relative;
+                   
                     h3{
                         font: 30px/1 $font1;
                         color: #eee;
@@ -152,10 +155,21 @@
                         border-radius: 50px;
                         border: 2px solid #fff;
                         transition: 0.3s;
+                        position: relative;
+                        z-index: 2;
                         &:hover{
                             background-color: #fff;
                             color: rgb(79, 189, 156);
                         }
+                    }
+                    img{
+                        position: absolute;
+                        opacity: 0.4;
+                        width: 200px;
+                        bottom: 0;
+                        left: 0;
+                        transform: rotate(150deg);
+                        z-index: 1;
                     }
                 }
             }
@@ -168,7 +182,14 @@
                 flex-direction: column;
                 justify-content: space-around;
                 align-items: center;
+                position: relative;
 
+                img{
+                    width: 150px;
+                    opacity: 0.7;
+                    position: absolute;
+                    right: 0;
+                }
                 h3{
                     font: 50px/1 $font1;
                     color: #fff;
@@ -202,6 +223,8 @@
                 background-color: rgb(255, 201, 99);
                 border-radius: 0 0 0 80px;
                 align-items: center;
+                position: relative;
+                overflow: hidden;
                 h3{
                     font: bold 18px/1 $font1;
                     color: #fff;
@@ -211,6 +234,8 @@
                     padding-bottom: 50px;
                     display: flex;
                     justify-content: space-around;
+                    position: relative;
+                    z-index: 2;
                     li{
                         img{
                             filter: grayscale(0.7);
@@ -223,12 +248,20 @@
                         }
                     }
                 }
+                >img{
+                    position: absolute;
+                    z-index: 1;
+                    width: 280px;
+                    opacity: 0.3;
+                    left: -50px;
+                    bottom: -80px;
+                }
             }
             .con4{
                 width: 700px;
                 height: 300px;
                 overflow: hidden;
-                background-color: darkseagreen;
+                background-color: rgb(236, 213, 238);
                 border-radius: 0 0 80px 0;
                 .inner{
                     width: 100%;
