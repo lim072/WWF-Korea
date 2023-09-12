@@ -1,20 +1,23 @@
 #visual{
     width: 100vw;
-    height: 500px;
+    margin-bottom: 50px;
+    overflow: hidden;
     .frame{
         position: relative;
         width: 300%;
-        height: 100%;
         overflow: hidden;
         
         .slide{
             width: 100%;
             display: flex;
+            overflow: hidden;
             >li{
                 width: 100%;
                 transition: 0.5s;
+            
                 img{
                     width: 100%;
+                    object-fit: cover;
                 }
             }
         }
@@ -37,5 +40,75 @@
                 }
             }
         }
+    }
+}
+#best{
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    overflow-x: hidden;
+    
+    h3{
+        display: block;
+        width: 180px;
+        height: 90px;
+        font: bold 18px/2.4 $font1; 
+        color: #fff;
+        background-color: rgb(10, 153, 117);
+        border-radius: 45px 45px 0px 45px;
+
+    }
+    .inner{
+        width: 100%;
+        // overflow: hidden;
+        
+        >ul{
+            padding-top: 20px;
+                
+            >li{
+                display: inline-block;
+                width: 160px;
+                height: 220px;
+                background-color: #fff;
+                border: 2px solid rgb(10, 153, 117);
+                margin-left: 20px;
+                margin-bottom: 20px;
+                border-radius: 10px;
+                cursor: pointer;
+                img{
+                    margin-top: 20px;
+                    width: 120px;
+                    transition: 0.5s;
+                }
+                h4{
+                    margin-top: 20px;
+                    font: bold 14px/1 $font1;
+                    color: #888;
+                    transition: 0.25s;  
+                }
+                
+                &:hover{
+                    img{
+                        transform: scale(1.05);
+                    }
+                    h4{
+                        color: #111;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+#content{
+    width: 100vw;
+    height: 800px;
+    margin-top: 50px;
+    background-color: #eee;
+    .inner{
+        margin: 0 auto;
+        max-width: 1000px;
     }
 }
