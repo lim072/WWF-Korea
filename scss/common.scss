@@ -9,6 +9,12 @@ a{
 ul,li{
     list-style: none;
 }
+.hidden{
+    position: absolute;
+    top: -5000px;
+    opacity: 0;
+    z-index: -500;
+}
 
 $font1 : Poppins;
 body{overflow-x: hidden;}
