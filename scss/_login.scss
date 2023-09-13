@@ -1,0 +1,126 @@
+#logInPage{
+    width: 100vw;
+    background-color: #eee;
+    padding: 100px;
+    .inner{
+        max-width: 700px;
+        margin: 0 auto;
+        text-align: center;
+        background-color: #fff;
+        box-shadow: 2px 2px 2px rgba($color: #000000, $alpha: 0.2);
+        border-radius: 10px 0 10px 0;
+        padding: 50px 20px 50px 20px;
+
+        h3{
+            font: bold 30px/1 $font1;
+        }
+        p{
+            padding: 50px 0 50px 0;
+            margin: 0 auto;
+            width: 250px;
+            font: 13px/1.2 $font1;
+        }
+
+        #logIn{
+            width: 70%;
+            margin: 0 auto;
+            .textBox{
+                margin: 0 auto;
+                border: 1px solid #ddd;
+
+                label{
+                    display: flex;
+                    height: 70px;
+                    justify-content: start;
+                    &:nth-of-type(1){
+                        border-bottom: 1px solid #ddd;
+                    }
+                    span{
+                        width: 35%;
+                        height: 70px;
+                        font: bold 18px/70px $font1;
+                        color: #555;
+                        white-space: nowrap;
+                    }
+                    input{
+                        width: 65%;
+                        border: none;
+                        font: 14px/70px $font1;
+                    }
+                }
+            }
+            .idSave{
+                text-align: left;
+                margin-top: 20px;
+                height: 30px;
+                display: flex;
+                #toggle{
+                    cursor: pointer;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 20px;
+                    border:  2px solid #ddd;     
+                           
+                }
+                .hide{
+                        &::before{
+                        display: inline-block;
+                        content: '';
+                        position: relative;
+                        z-index: 2;
+                        left: -1.5px;
+                        width: 20px;
+                        height: 20px;;
+                        background-color: rgb(10, 153, 117);
+                        clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 50% 70%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+                        }
+                }
+                span{
+                    font: 14px/30px $font1;
+                    color: #555;
+                    position: relative;
+                    top: -4px;
+                    left: 10px;
+                    
+                }
+            }
+            #btnIn{
+                margin-top: 50px;
+                margin-bottom: 20px;
+                width: 100%;
+                border: none;
+                background-color: rgb(79, 189, 156);
+                height: 50px;
+                font: bold 16px/1 $font1;
+                color: #fff;
+                transition: 0.3s;
+
+                &:hover{
+                    background-color: rgb(10, 153, 117);
+                }
+            }
+        }
+        .logInMenu{
+            width: 70%;
+            margin: 0 auto;
+                
+            ul{
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-around;
+                li{
+                    text-align: center;
+                    width: 33%;
+                    border-right: 1px solid #ddd;
+                    a{
+                        font: 13px/1 $font1;
+                        color: #555;
+                    }
+                    &:nth-of-type(3){
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}
