@@ -124,7 +124,7 @@ header .inner .gnb > li .sub li {
 header .inner .gnb > li .sub li a {
   color: #777;
   font: 14px/40px Poppins;
-  transition: all 0.3s;
+  transition: all 0.5s;
   overflow: hidden;
 }
 header .inner .gnb > li .sub li:hover a {
@@ -137,7 +137,7 @@ header .subBg {
   height: 0px;
   border-top: 1px solid #ddd;
   background-color: #fff;
-  transition: height 0.5s;
+  transition: height 0.3s;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -535,30 +535,48 @@ footer .inner .footerMenu2 ul li {
   height: 30px;
   display: flex;
 }
-#logInPage .inner #logIn .idSave #toggle {
+#logInPage .inner #logIn .idSave input {
+  display: none;
+}
+#logInPage .inner #logIn .idSave input + label {
   cursor: pointer;
-  width: 20px;
-  height: 20px;
-  border-radius: 20px;
-  border: 2px solid #ddd;
+  display: flex;
+  align-items: center;
 }
-#logInPage .inner #logIn .idSave .hide::before {
-  display: inline-block;
+#logInPage .inner #logIn .idSave input + label::before {
   content: "";
-  position: relative;
-  z-index: 2;
-  left: -1.5px;
+  display: inline-block;
   width: 20px;
   height: 20px;
-  background-color: rgb(10, 153, 117);
-  clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 50% 70%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+  border: 2px solid #bbb;
+  border-radius: 30px;
 }
-#logInPage .inner #logIn .idSave span {
-  font: 14px/30px Poppins;
-  color: #555;
+#logInPage .inner #logIn .idSave input + label i {
+  display: none;
+}
+#logInPage .inner #logIn .idSave input + label strong {
+  margin-left: 10px;
+  font: 14px/1 Poppins;
+  color: #444;
+}
+#logInPage .inner #logIn .idSave input:checked + label {
   position: relative;
-  top: -4px;
-  left: 10px;
+}
+#logInPage .inner #logIn .idSave input:checked + label::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #bbb;
+  border-radius: 30px;
+}
+#logInPage .inner #logIn .idSave input:checked + label i {
+  display: inline-block;
+  position: absolute;
+  top: -7px;
+  left: 2px;
+  font-size: 30px;
+  color: rgb(10, 153, 117);
 }
 #logInPage .inner #logIn #btnIn {
   margin-top: 50px;
@@ -594,6 +612,118 @@ footer .inner .footerMenu2 ul li {
 }
 #logInPage .inner .logInMenu ul li:nth-of-type(3) {
   border: none;
+}
+
+#agreementPage {
+  width: 100vw;
+  background-color: #eee;
+  padding: 100px;
+  text-align: center;
+}
+#agreementPage h3 {
+  font: bold 40px/1 Poppins;
+}
+#agreementPage .step {
+  margin: 50px 0 50px 0;
+}
+#agreementPage .step ul {
+  display: flex;
+  justify-content: center;
+}
+#agreementPage .step ul li {
+  margin-right: 100px;
+}
+#agreementPage .step ul li::before {
+  display: block;
+  content: "";
+  width: 50px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #bbb;
+  position: relative;
+  top: 27px;
+  right: -75px;
+}
+#agreementPage .step ul li i {
+  font-size: 50px;
+  color: #bbb;
+}
+#agreementPage .step ul li:nth-of-type(3) {
+  margin: 0;
+}
+#agreementPage .step ul li:nth-of-type(3)::before {
+  display: none;
+}
+#agreementPage .step ul li.on i {
+  color: rgb(79, 189, 156);
+}
+#agreementPage .step ul li.on::before {
+  background-color: rgb(79, 189, 156);
+}
+#agreementPage .inner {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px 0 10px 0;
+  overflow: hidden;
+  position: relative;
+}
+#agreementPage .inner h2 {
+  width: 100%;
+  height: 50px;
+  display: block;
+  background-color: darkcyan;
+  font: bold 20px/50px Poppins;
+  color: #fff;
+}
+#agreementPage .inner #agreement {
+  margin: 50px;
+  text-align: left;
+}
+#agreementPage .inner #agreement .allAgree input {
+  display: none;
+}
+#agreementPage .inner #agreement .allAgree input + label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+#agreementPage .inner #agreement .allAgree input + label::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #bbb;
+  border-radius: 30px;
+}
+#agreementPage .inner #agreement .allAgree input + label i {
+  display: none;
+}
+#agreementPage .inner #agreement .allAgree input + label strong {
+  margin-left: 10px;
+  font: bold 20px/1 Poppins;
+  color: #444;
+}
+#agreementPage .inner #agreement .allAgree input:checked + label {
+  position: relative;
+}
+#agreementPage .inner #agreement .allAgree input:checked + label::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #bbb;
+  border-radius: 30px;
+}
+#agreementPage .inner #agreement .allAgree input:checked + label i {
+  display: inline-block;
+  position: absolute;
+  top: -10px;
+  left: 3px;
+  font-size: 40px;
+  color: darkcyan;
 }
 
 /*# sourceMappingURL=style.css.map */

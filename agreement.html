@@ -6,7 +6,6 @@
     <title>로그인</title>
     <link rel="stylesheet" href="css/style.css">
     <script defer src="script/header.js"></script>
-    <script defer src="script/toggle.js"></script>
     <script src="https://kit.fontawesome.com/220fae79fc.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -76,40 +75,29 @@
         </div>
     </header>
 
-    <section id="logInPage">
-        <h2 class="hidden">로그인 페이지</h2>
+    <section id="agreementPage">
+        
+        <h3>회원가입</h3>
+        <div class="step">
+            <ul>
+                <li class="on"><i class="fa-solid fa-stamp"></i></li>
+                <li><i class="fa-solid fa-user"></i></li>
+                <li><i class="fa-solid fa-check"></i></li>
+            </ul>
+        </div>
         <div class="inner">
-            <h3>LOGIN</h3>
-            <P>샐러맨더 회원으로 로그인하시면 제공하는 다양한 서비스를 이용할 수 있습니다.</P>
+            <h2>STAP.1 약관동의</h2>
+
+            <form action="result.html" id="agreement">
             
-            <form action="index.html" id="logIn">
-                <div class="textBox">
-                <label for="id">
-                    <span>이메일 아이디</span>
-                    <input type="text" placeholder="이메일 아이디 입력" id="id">
-                </label>
-                <label for="pw">
-                    <span>비밀번호</span>
-                    <input type="password" placeholder="비밀번호 입력" id="pw">
-                </label>
-                </div>
-                <div class="idSave">
-                    <input type="checkbox" id="saveCb">
-                    <label for="saveCb" >
+                <div class="allAgree">
+                    <input type="checkbox" id="allAgreeCb">
+                    <label for="allAgreeCb" >
                         <i class="fa-solid fa-check"></i>
-                        <strong>아이디 저장</strong>
+                        <strong>약관 전체 동의</strong>
                     </label>
                 </div>
-                <input type="submit" id="btnIn" value="로그인">
-                <a href="#;"></a>
             </form>
-            <div class="logInMenu">
-                <ul>
-                    <li><a href="#;">아이디 찾기</a></li>
-                    <li><a href="#;">비밀번호 찾기</a></li>
-                    <li><a href="#;">회원가입</a></li>
-                </ul>
-            </div>
         </div>
     </section>
 

@@ -54,35 +54,54 @@
                 margin-top: 20px;
                 height: 30px;
                 display: flex;
-                #toggle{
-                    cursor: pointer;
-                    width: 20px;
-                    height: 20px;
-                    border-radius: 20px;
-                    border:  2px solid #ddd;     
-                           
-                }
-                .hide{
+
+                    input{
+                        display: none;
+                    }
+                    input + label{
                         &::before{
-                        display: inline-block;
-                        content: '';
-                        position: relative;
-                        z-index: 2;
-                        left: -1.5px;
-                        width: 20px;
-                        height: 20px;;
-                        background-color: rgb(10, 153, 117);
-                        clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 50% 70%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+                            content: '';
+                            display: inline-block;
+                            width: 20px;
+                            height: 20px;
+                            border: 2px solid #bbb;
+                            border-radius: 30px;
                         }
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                      
+                        i{
+                            display: none;
+                        }
+                        strong{
+                            margin-left: 10px;
+                            font: 14px/1 $font1;
+                            color: #444;
+                        }
+                    }
+                    input:checked + label{
+                        position: relative;
+                        &::before{
+                            content: '';
+                            display: inline-block;
+                            width: 20px;
+                            height: 20px;
+                            border: 2px solid #bbb;
+                            border-radius: 30px;
+                            
+                        }
+                        i{
+                            display: inline-block;
+                            position: absolute;
+                            top: -7px;
+                            left: 2px;
+                            font-size: 30px;
+                            color: rgb(10, 153, 117);
+                        
+                    }
                 }
-                span{
-                    font: 14px/30px $font1;
-                    color: #555;
-                    position: relative;
-                    top: -4px;
-                    left: 10px;
-                    
-                }
+
             }
             #btnIn{
                 margin-top: 50px;
