@@ -130,6 +130,12 @@ header .inner .gnb > li .sub li a {
 header .inner .gnb > li .sub li:hover a {
   color: rgb(10, 153, 72);
 }
+header .inner .moBtn {
+  display: none;
+}
+header .inner .moGnb {
+  display: none;
+}
 header .subBg {
   position: absolute;
   z-index: 5;
@@ -589,6 +595,7 @@ footer .inner .footerMenu2 ul li {
   font: bold 16px/1 Poppins;
   color: #fff;
   transition: 0.3s;
+  cursor: pointer;
 }
 #logInPage .inner #logIn #btnIn:hover {
   background-color: rgb(10, 153, 117);
@@ -1035,6 +1042,226 @@ footer .inner .footerMenu2 ul li {
   color: rgb(79, 189, 156);
   background-color: #fff;
   cursor: pointer;
+}
+
+#resultPage {
+  width: 100vw;
+  background-color: #eee;
+  padding: 50px;
+  text-align: center;
+}
+#resultPage h3 {
+  font: bold 30px/1 Poppins;
+  color: #444;
+}
+#resultPage .step {
+  margin: 50px 0 50px 0;
+}
+#resultPage .step ul {
+  display: flex;
+  justify-content: center;
+}
+#resultPage .step ul li {
+  margin-right: 100px;
+}
+#resultPage .step ul li::before {
+  display: block;
+  content: "";
+  width: 50px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #bbb;
+  position: relative;
+  top: 27px;
+  right: -75px;
+}
+#resultPage .step ul li i {
+  font-size: 50px;
+  color: #bbb;
+}
+#resultPage .step ul li:nth-of-type(3) {
+  margin: 0;
+}
+#resultPage .step ul li:nth-of-type(3)::before {
+  display: none;
+}
+#resultPage .step ul li.on i {
+  color: rgb(79, 189, 156);
+}
+#resultPage .step ul li.on::before {
+  background-color: rgb(79, 189, 156);
+}
+#resultPage .inner {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px 0 10px 0;
+  overflow: hidden;
+  position: relative;
+}
+#resultPage .inner h2 {
+  width: 100%;
+  height: 50px;
+  display: block;
+  background-color: darkcyan;
+  font: bold 20px/50px Poppins;
+  color: #fff;
+}
+#resultPage .inner p {
+  margin: 50px 0 50px 0;
+  font: bold 25px/50px Poppins;
+}
+#resultPage .inner article {
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+#resultPage .inner article div {
+  width: 50%;
+  height: 300px;
+}
+#resultPage .inner article div img {
+  margin-top: 20px;
+  width: 250px;
+}
+#resultPage .inner article div:nth-of-type(1) {
+  border-radius: 20px 0 0 0;
+  background-color: rgb(157, 217, 241);
+}
+#resultPage .inner article div:nth-of-type(2) {
+  border-radius: 0 0 20px 0;
+  background-color: rgb(248, 206, 128);
+}
+#resultPage .inner article div:nth-of-type(2) img {
+  margin-top: 45px;
+}
+#resultPage .inner article div p {
+  margin: 0;
+  font: bold 18px/50px Poppins;
+  color: #fff;
+  cursor: pointer;
+}
+#resultPage .inner a {
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  font: bold 20px/50px Poppins;
+  border: 2px solid rgb(79, 189, 156);
+  color: rgb(79, 189, 156);
+  background-color: #fff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  header .inner h1 {
+    text-align: left;
+    left: 40px;
+  }
+  header .inner h1 a img {
+    width: 150px;
+  }
+  header .inner nav {
+    display: none;
+  }
+  header .inner .gnb {
+    display: none;
+  }
+  header .inner .moBtn {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: -20px;
+  }
+  header .inner .moBtn a {
+    position: absolute;
+    right: 10px;
+  }
+  header .inner .moBtn a img {
+    width: 40px;
+  }
+  header .inner .moBtn a:nth-of-type(2) {
+    opacity: 0;
+  }
+  header .inner .moGnb {
+    display: block;
+    position: absolute;
+    right: 0;
+    z-index: 20;
+    background-color: #fff;
+    width: 150px;
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 0 0 0 20px;
+    overflow: hidden;
+    padding: 10px 10px 50px 10px;
+  }
+  header .inner .moGnb > li {
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  header .inner .moGnb > li::before {
+    display: block;
+    content: "";
+    opacity: 0;
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+    width: 15px;
+    height: 8px;
+    background-color: rgb(10, 153, 72);
+    position: absolute;
+    bottom: none;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
+    transition: opacity 0.3s;
+  }
+  header .inner .moGnb > li:nth-of-type(6)::before {
+    display: none;
+  }
+  header .inner .moGnb > li > a {
+    border-radius: 10px 0 0 0;
+    display: block;
+    color: #444;
+    font: bold 13px/30px Poppins;
+    transition: all 0.3s;
+    border-bottom: 1px solid rgb(10, 153, 117);
+  }
+  header .inner .moGnb > li:hover::before {
+    opacity: 1;
+  }
+  header .inner .moGnb > li:hover > a {
+    background-color: rgb(10, 153, 117);
+    color: #fff;
+  }
+  header .inner .moGnb > li .sub {
+    position: relative;
+  }
+  header .inner .moGnb > li .sub li {
+    height: 0px;
+    transition: all 0.3s;
+    overflow: hidden;
+  }
+  header .inner .moGnb > li .sub li a {
+    color: #777;
+    font: 5px/40px Poppins;
+    transition: all 0.5s;
+    overflow: hidden;
+  }
+  header .inner .moGnb > li .sub li:hover a {
+    color: rgb(10, 153, 72);
+  }
+  header .subBg {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
