@@ -1,0 +1,207 @@
+@media screen and (max-width : "1000px") {
+    header{
+        .inner{
+            h1{
+                text-align: left;
+                left: 40px;
+                a{
+                    img{
+                        width: 150px;
+                    }
+                }
+            }
+            nav{
+                display: none;
+            }
+    
+            .gnb{
+                display: none;
+            }
+            .moBtn{
+                display: block;
+                position: absolute;
+                right: 45px;
+                top: -20px;
+                a{  
+                    position: absolute;
+                    right: 10px;
+                    transition: 0.5s;
+                    img{
+                        width: 40px;
+                    }
+                    &:nth-of-type(2){
+                        opacity: 0;
+                        z-index: -1;
+                 
+                    }
+                }
+            }
+            .moGnb{
+                display: block;
+                position: absolute;
+                right: -150px;
+                z-index: 20;
+                background-color: #fff;
+                width: 150px;
+                box-shadow: -2px 2px 5px rgba($color: #000000, $alpha: 0.4);
+                border-radius: 0 0 0 20px;
+                overflow: hidden;
+                padding: 10px 10px 50px 10px;
+                transition: 0.5s;
+                >li{
+                    background-color: #fff;
+                    text-align: center;
+                    position: relative;
+                    margin-bottom: 10px;
+                    &::before{
+                        display: block;
+                        content: '';
+                        opacity: 0;
+                        clip-path: polygon(50% 0, 100% 100%, 0 100%);
+                        width: 15px;
+                        height: 8px;
+                        background-color: rgb(10, 153, 72);
+                        position: absolute;
+                        bottom: none;
+                        top: 30px;
+                        left: 50%;
+                        transform: translateX(-50%) rotate(180deg);
+                        transition: opacity 0.3s;
+                    }
+                    &:nth-of-type(6){
+                        &::before{
+                            display: none;
+                        }
+                    }
+                  
+                    >a{
+                        border-radius: 10px 0 0 0;
+                        display: block;
+                        color: #444;
+                        font: bold 13px/30px $font1;
+                        transition: all 0.3s;
+                        border-bottom: 1px solid rgb(10, 153, 117);
+                    }
+
+                    &:hover{
+                      
+                        &::before{
+                            opacity: 1;
+                        }
+                        >a{
+                            background-color: rgb(10, 153, 117);
+                            color: #fff;
+                        }
+                    }
+                    .sub{
+                        position: relative;
+                        li{
+                            height: 0px;
+                            transition: all 0.3s;
+                            overflow: hidden;
+                            a{
+                                color: #777;
+                                font: 5px/40px $font1;
+                                transition: all 0.5s;
+                                overflow: hidden;
+                            }
+                            &:hover{
+                                a{
+                                    color: rgb(10, 153, 72);
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .subBg{
+           display: none;
+        }
+    }
+    #visual{
+        .frame{
+            .slideBtn{
+                left: 2%;
+                bottom: 20px;
+                >li{
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+        }
+    }
+    #content{
+        padding: 20px;
+        .inner{
+            padding: 20px;
+            .conBox1{
+                flex-direction: column;
+                .con1{
+                    width: 100%;
+                    border-radius: 20px;
+                    display: block;
+                    position: relative;
+
+                    .con1Img{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        img{
+                            width: 200px;
+                            opacity: 0.2;
+                        }
+                    
+                    }
+                    .con1Text{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        height: 300px;
+           
+                        h3{
+                            padding: 10px;
+                            font: 25px/1 $font1;
+                        }
+                        img{
+                            opacity: 0.2;
+                        }
+                    }
+                }
+                .con2{
+                    width: 100%;
+                    border-radius: 20px;
+                    height: 200px;
+                    position: relative;
+    
+                    img{
+                        width: 200px;
+                        opacity: 0.4;
+                        position: absolute;
+                        right: 5%;
+                        top: 0;
+                    }
+                }
+            }
+            .conBox2{
+                flex-direction: column;
+                
+                .con3{
+                    width: 100%;
+                    height: 200px;
+                    border-radius: 20px;
+                    h3{
+                        padding: 10px;
+                    }
+                }
+                .con4{
+                    display: none;
+                    
+                }
+            }
+        }
+    }
+}

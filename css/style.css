@@ -284,7 +284,6 @@ footer .inner .footerMenu2 ul li {
 
 #content {
   width: 100vw;
-  height: 700px;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -1178,23 +1177,25 @@ footer .inner .footerMenu2 ul li {
   header .inner .moBtn {
     display: block;
     position: absolute;
-    right: 10px;
+    right: 45px;
     top: -20px;
   }
   header .inner .moBtn a {
     position: absolute;
     right: 10px;
+    transition: 0.5s;
   }
   header .inner .moBtn a img {
     width: 40px;
   }
   header .inner .moBtn a:nth-of-type(2) {
     opacity: 0;
+    z-index: -1;
   }
   header .inner .moGnb {
     display: block;
     position: absolute;
-    right: 0;
+    right: -150px;
     z-index: 20;
     background-color: #fff;
     width: 150px;
@@ -1202,6 +1203,7 @@ footer .inner .footerMenu2 ul li {
     border-radius: 0 0 0 20px;
     overflow: hidden;
     padding: 10px 10px 50px 10px;
+    transition: 0.5s;
   }
   header .inner .moGnb > li {
     background-color: #fff;
@@ -1258,6 +1260,91 @@ footer .inner .footerMenu2 ul li {
   }
   header .inner .moGnb > li .sub li:hover a {
     color: rgb(10, 153, 72);
+  }
+  header .subBg {
+    display: none;
+  }
+  #visual .frame .slideBtn {
+    left: 2%;
+    bottom: 20px;
+  }
+  #visual .frame .slideBtn > li {
+    width: 10px;
+    height: 10px;
+  }
+  #content {
+    padding: 20px;
+  }
+  #content .inner {
+    padding: 20px;
+  }
+  #content .inner .conBox1 {
+    flex-direction: column;
+  }
+  #content .inner .conBox1 .con1 {
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+    position: relative;
+  }
+  #content .inner .conBox1 .con1 .con1Img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #content .inner .conBox1 .con1 .con1Img img {
+    width: 200px;
+    opacity: 0.2;
+  }
+  #content .inner .conBox1 .con1 .con1Text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+  }
+  #content .inner .conBox1 .con1 .con1Text h3 {
+    padding: 10px;
+    font: 25px/1 Poppins;
+  }
+  #content .inner .conBox1 .con1 .con1Text img {
+    opacity: 0.2;
+  }
+  #content .inner .conBox1 .con2 {
+    width: 100%;
+    border-radius: 20px;
+    height: 200px;
+    position: relative;
+  }
+  #content .inner .conBox1 .con2 img {
+    width: 200px;
+    opacity: 0.4;
+    position: absolute;
+    right: 5%;
+    top: 0;
+  }
+  #content .inner .conBox2 {
+    flex-direction: column;
+  }
+  #content .inner .conBox2 .con3 {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+  }
+  #content .inner .conBox2 .con3 h3 {
+    padding: 10px;
+  }
+  #content .inner .conBox2 .con4 {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  header .inner h1 {
+    left: 10px;
+  }
+  header .inner .moBtn {
+    right: 20px;
   }
   header .subBg {
     display: none;
