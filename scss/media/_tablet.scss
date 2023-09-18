@@ -4,6 +4,7 @@
             h1{
                 text-align: left;
                 left: 40px;
+                top: -30px;
                 a{
                     img{
                         width: 150px;
@@ -11,7 +12,10 @@
                 }
             }
             nav{
-                display: none;
+                display: block;
+                right: none;
+                top: 15px;
+                left: 40px;
             }
     
             .gnb{

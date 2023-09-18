@@ -1164,12 +1164,16 @@ footer .inner .footerMenu2 ul li {
   header .inner h1 {
     text-align: left;
     left: 40px;
+    top: -30px;
   }
   header .inner h1 a img {
     width: 150px;
   }
   header .inner nav {
-    display: none;
+    display: block;
+    right: none;
+    top: 15px;
+    left: 40px;
   }
   header .inner .gnb {
     display: none;
@@ -1341,6 +1345,9 @@ footer .inner .footerMenu2 ul li {
 }
 @media screen and (max-width: 400px) {
   header .inner h1 {
+    left: 10px;
+  }
+  header .inner nav {
     left: 10px;
   }
   header .inner .moBtn {
