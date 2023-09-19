@@ -53,11 +53,11 @@ moGnb.forEach((item)=>{
 
 moBtnOff.addEventListener("click", ()=>{
     if(moBtnOn.style.opacity == 0){
-        moGnbNav.style.right = "0";
+        moGnbNav.style.left = "0";
         moBtnOff.style.opacity = "0"
         moBtnOn.style.opacity = "1";
     }else{
-        moGnbNav.style.right = "-140px";
+        moGnbNav.style.left = "-150px";
         moBtnOff.style.opacity = "1"
         moBtnOn.style.opacity = "0";
     }
