@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script defer src="script/header.js"></script>
     <script src="https://kit.fontawesome.com/220fae79fc.js" crossorigin="anonymous"></script>
+    <script defer src="script/join.js"></script>
 </head>
 <body>
     <header> 
@@ -152,11 +153,11 @@
                             <dt>아이디(이메일)</dt>
                             <dd>
                                 <span>
-                                    <input type="text" placeholder="이메일 아이디 입력">
+                                    <input type="text" placeholder="이메일 아이디 입력" name="id">
                                 </span>
                                     @
                                 <span>
-                                    <input type="text" placeholder="이메일 도메인 입력">
+                                    <input type="text" placeholder="이메일 도메인 입력" id="emailDomain" name="domain">
                                 </span>
                                 <span>
                                     <select name="joinIdSelect" id="joinIdSelect">
@@ -168,7 +169,7 @@
                                     </select>
                                 </span>
                                 <div class="idTest">
-                                    <a href="#">중복확인</a>
+                                    <a href="#;" class="checkDuplicate">중복확인</a>
                                 </div>
                             </dd>
                         </dl>
@@ -179,7 +180,7 @@
                             <dt>비밀번호</dt>
                             <dd>
                                 <span>
-                                    <input type="text" placeholder="비밀번호 입력">
+                                    <input type="password" placeholder="비밀번호 입력" name="pwd1">
                                 </span>
                             </dd>
                         </dl>
@@ -189,8 +190,8 @@
                         <dl>
                             <dt>비밀번호 확인</dt>
                             <dd>
-                                <span>
-                                    <input type="text" placeholder="비밀번호 입력">
+                                <span> 
+                                    <input type="password" placeholder="비밀번호 입력"  name="pwd2">
                                 </span>
                             </dd>
                         </dl>

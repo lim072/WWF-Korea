@@ -1001,6 +1001,11 @@ footer .inner .footerMenu2 ul li {
   font: bold 12px/60px Poppins;
   color: rgb(10, 153, 117);
 }
+#joinPage .inner #join .joinText .joinId dl dd p {
+  width: 200%;
+  font: 10px/1 Poppins;
+  color: red;
+}
 #joinPage .inner #join .joinText .joinPw, #joinPage .inner #join .joinText .joinPw2 {
   border: 1px solid #ddd;
   width: 100%;
@@ -1026,6 +1031,16 @@ footer .inner .footerMenu2 ul li {
   border: none;
   font: 12px/60px Poppins;
   padding-left: 5px;
+}
+#joinPage .inner #join .joinText .joinPw dl dd span:nth-of-type(1), #joinPage .inner #join .joinText .joinPw2 dl dd span:nth-of-type(1) {
+  display: block;
+  font: 10px/1 Poppins;
+  color: green;
+}
+#joinPage .inner #join .joinText .joinPw dl dd span p, #joinPage .inner #join .joinText .joinPw2 dl dd span p {
+  margin-top: 25px;
+  font: 10px/1 Poppins;
+  color: red;
 }
 #joinPage .inner #join #joinNext {
   margin-top: 50px;
@@ -1454,7 +1469,7 @@ footer .inner .footerMenu2 ul li {
     width: 100%;
   }
   #joinPage .inner #join {
-    margin: 20px;
+    margin: 10px;
   }
   #joinPage .inner #join h3 {
     font: bold 16px/50px Poppins;
@@ -1486,12 +1501,12 @@ footer .inner .footerMenu2 ul li {
     border: none;
     font: 10px/60px Poppins;
     width: 100px;
-    padding-left: 5px;
+    padding-left: 0px;
   }
   #joinPage .inner #join .joinText .joinId dl dd span #joinIdSelect {
     position: absolute;
     bottom: -30px;
-    left: -100px;
+    left: -105px;
   }
   #joinPage .inner #join .joinText .joinId dl dd .idTest {
     position: relative;
